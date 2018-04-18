@@ -2,11 +2,11 @@
   <% @products.each do |id, product| %>
     <div class="card col-sm">
       <a href="#">
-        <img class="card-img-top img-fluid" src="assets/images/<%= product.category %>-<%= id %>.jpeg" alt="<%= product.name %>">
+        <img class="card-img-top img-fluid" src="assets/images/<%= product.category %>-<%= id %>.jpg" alt="<%= product.name %>">
       </a>
       <div class="card-body">
-        <h5 class="card-title text-uppercase font-weight-bold"><%= product.name %></h5>
-        <h5 class="card-subtitle">$<%= "%.2f" % product.price %></h5>
+        <h6 class="card-title text-uppercase font-weight-bold float-left"><%= product.name %></h6>
+        <p class="card-subtitle float-right">$<%= "%.2f" % product.price %></p>
       </div>
       <div class="card-body">
         <p class="card-text"><%= product.description %></p>
