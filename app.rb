@@ -61,6 +61,5 @@ post '/' do
   end
 
   send_email(subject, create_catalog(dough))
-  # TODO: add modal popup? another view?
   erb :index
 end
