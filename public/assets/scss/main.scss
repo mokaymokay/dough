@@ -32,3 +32,11 @@ body {
 .fa {
   color: $green-sheen;
 }
+
+.list-group > a {
+  color: $green-sheen;
+
+&:hover {
+    color: darken($green-sheen, 15%)
+  }
+}

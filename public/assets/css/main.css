@@ -27,3 +27,11 @@ body {
 .fa {
   color: #70ABAF;
 }
+
+.list-group > a {
+  color: #70ABAF;
+}
+
+.list-group > a:hover {
+  color: #4c8387;
+}

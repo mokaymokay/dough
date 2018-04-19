@@ -1,5 +1,5 @@
 <div class="row">
-  <div class="col-lg-2">
+  <div class="col-lg-2 mb-3">
     <div class="list-group" role="tablist">
       <a class="list-group-item" href="/cakes" role="tab" aria-controls="cakes">Cakes</a>
       <a class="list-group-item" href="/cookies" role="tab" aria-controls="cookies">Cookies</a>
@@ -10,15 +10,15 @@
   <div class="col-lg-10">
     <div class="row">
       <% @products.each do |id, product| %>
-        <div class="card col-lg-4">
+        <div class="card col-lg-4 col-md-6 border-0 mb-3">
           <a href="#">
             <img class="card-img-top img-fluid" src="assets/images/<%= product.category %>-<%= id %>.jpg" alt="<%= product.name %>">
           </a>
-          <div class="card-body">
+          <div class="pt-3 pb-2">
             <h6 class="card-title text-uppercase font-weight-bold float-left"><%= product.name %></h6>
             <p class="card-subtitle float-right">$<%= "%.2f" % product.price %></p>
           </div>
-          <div class="card-body">
+          <div class="pb-3">
             <p class="card-text"><%= product.description %></p>
           </div>
         </div>
