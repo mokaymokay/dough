@@ -1,5 +1,4 @@
 class Menu
-
   def initialize
     @cakes = {}
     @cookies = {}
@@ -21,7 +20,7 @@ class Menu
     @muffins[muffin.id] = muffin
   end
 
-  def cakes
+  def cake
     @cakes
   end
 

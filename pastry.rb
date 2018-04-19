@@ -1,6 +1,4 @@
 class Pastry
-  attr_accessor :id, :name, :price, :description, :category
-
   def initialize(id, name, price, description, category)
     @id = id
     @name = name
@@ -18,7 +16,6 @@ class Cookie < Pastry
 end
 
 class Cake < Pastry
-
   def initialize(id, name, price, description)
     category = 'cake'
     super(id, name, price, description, category)
