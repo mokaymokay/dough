@@ -16,6 +16,9 @@ body {
   .fa:hover {
     color: #4c8387;
   }
+}
+
+@media (min-width: 1000px) {
   .navbar-nav > li > a {
     line-height: 70px;
   }

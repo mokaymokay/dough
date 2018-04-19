@@ -20,7 +20,9 @@ body {
   .fa:hover {
     color: darken($green-sheen, 15%)
   }
+}
 
+@media (min-width: 1000px) {
   .navbar-nav > li > a {
    line-height: 70px;
    i {
