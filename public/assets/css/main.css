@@ -8,8 +8,22 @@ body {
     height: 20vw;
     object-fit: cover;
   }
+  .fa {
+    padding: 15px;
+    font-size: 25px;
+    width: 25px;
+  }
+  .fa:hover {
+    color: #4c8387;
+  }
+  .navbar-nav > li > a {
+    line-height: 70px;
+  }
+  .navbar-nav > li > a i {
+    line-height: 55px;
+  }
 }
 
-#sticky-footer {
-  padding: 2vw;
+.fa {
+  color: #70ABAF;
 }

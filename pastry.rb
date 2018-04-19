@@ -27,7 +27,7 @@ end
 
 class Muffin < Pastry
   def initialize(id, name, price, description)
-    category = 'cookie'
+    category = 'muffin'
     super(id, name, price, description, category)
   end
 end

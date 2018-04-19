@@ -4,19 +4,19 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/main.css">
     <title>dough</title>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
       <a class="navbar-brand" href="/">
-        <img src="/assets/images/dough-logo.png" width="100" height="100" alt="dough">
+        <img src="/assets/images/dough-logo.png" width="70" height="70" alt="dough">
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse text-uppercase font-weight-bold" id="navbarNavDropdown">
-        <%# TODO: move elements to right and add social media icons%>
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
               <a class="nav-link" href="/">Home
@@ -38,22 +38,25 @@
             <li class="nav-item">
               <a class="nav-link" href="#">Contact</a>
             </li>
+            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
           </ul>
         </div>
       </nav>
       <div class="container">
         <%= yield %>
       </div>
-        <footer id="sticky-footer" class="footer fixed-bottom bg-light">
+        <footer class="footer fixed-bottom bg-light">
           <div class="container">
-            <form>
-              <div class="form-group row justify-content-md-center">
+            <form class="col-md-6 offset-md-3">
+              <div class="form-group row justify-content-center">
                 <label for="catalog-form">Get our catalog directly to your inbox!</label>
                 <div class="input-group">
                   <input type="email" class="form-control form-control-sm" id="catalog-form" aria-describedby="emailHelp" placeholder="Enter email">
                   <button type="submit" class="btn btn-primary">Submit</button>
                 </div>
-                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
               </div>
             </form>
             <small>Copyright © 2018 Dough</small>

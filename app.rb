@@ -18,7 +18,7 @@ get '/:product' do
     erb :products
   elsif params[:product] == "cookies"
     dough.add_cookie(101, "Macaron", 18.00, "Gift box of 6 in assorted flavors. Choose from dark chocolate, green tea, black sesame, and more.")
-    dough.add_cookie(102, "Chocolate Chip Walnut Cookie", 3.50, "Crispy outside with a satisfyingly thick and gooey center. Every bite is packed with semi-sweet chocolate chips and chunks of walnuts.")
+    dough.add_cookie(102, "Chocolate Chip Cookie", 3.50, "Crispy outside with a satisfyingly thick and gooey center. Every bite is packed with semi-sweet chocolate chips.")
     dough.add_cookie(103, "Oatmeal Raisin Cookie", 3.00, "A decadent twist on a classic. 6 ounces each, these rich and buttery cookies are golden brown on the outside, moist on the inside, and full of plump sweet raisins.")
     @products = dough.cookies
     erb :products
