@@ -1,16 +1,28 @@
 <div class="row">
-  <% @products.each do |id, product| %>
-    <div class="card col-sm">
-      <a href="#">
-        <img class="card-img-top img-fluid" src="assets/images/<%= product.category %>-<%= id %>.jpg" alt="<%= product.name %>">
-      </a>
-      <div class="card-body">
-        <h6 class="card-title text-uppercase font-weight-bold float-left"><%= product.name %></h6>
-        <p class="card-subtitle float-right">$<%= "%.2f" % product.price %></p>
-      </div>
-      <div class="card-body">
-        <p class="card-text"><%= product.description %></p>
-      </div>
+  <div class="col-lg-2">
+    <div class="list-group" role="tablist">
+      <a class="list-group-item" href="/cakes" role="tab" aria-controls="cakes">Cakes</a>
+      <a class="list-group-item" href="/cookies" role="tab" aria-controls="cookies">Cookies</a>
+      <a class="list-group-item" href="/muffins" role="tab" aria-controls="muffins">Muffins</a>
+      <a class="list-group-item" href="/all" role="tab" aria-controls="all">All</a>
     </div>
-  <% end %>
+  </div>
+  <div class="col-lg-10">
+    <div class="row">
+      <% @products.each do |id, product| %>
+        <div class="card col-lg-4">
+          <a href="#">
+            <img class="card-img-top img-fluid" src="assets/images/<%= product.category %>-<%= id %>.jpg" alt="<%= product.name %>">
+          </a>
+          <div class="card-body">
+            <h6 class="card-title text-uppercase font-weight-bold float-left"><%= product.name %></h6>
+            <p class="card-subtitle float-right">$<%= "%.2f" % product.price %></p>
+          </div>
+          <div class="card-body">
+            <p class="card-text"><%= product.description %></p>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
 </div>

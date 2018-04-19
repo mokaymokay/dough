@@ -41,7 +41,7 @@ get '/:product' do
   end
 end
 
-post '/catalog' do
+post '/' do
   subject = "this catalog dough"
   email_content = "all you knead is loaf"
 
@@ -50,12 +50,11 @@ post '/catalog' do
     to = Email.new(email: params[:email])
     content = Content.new(type: 'text/plain', value: email_content)
     mail = Mail.new(from, subject, to, content)
-    p mail
-    # sg = SendGrid::API.new(api_key: ENV['SENDGRID_API_KEY'])
-    # response = sg.client.mail._('send').post(request_body: mail.to_json)
-    # p response.status_code #test
+    sg = SendGrid::API.new(api_key: ENV['SENDGRID_API_KEY'])
+    response = sg.client.mail._('send').post(request_body: mail.to_json)
   end
 
   send_email(subject, email_content)
-  redirect to('/')
+  # TODO: add modal popup? another view?
+  erb :index
 end
