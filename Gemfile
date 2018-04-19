@@ -1,3 +1,4 @@
-source 'https://rubygems.org' do 
+source 'https://rubygems.org' do
   gem 'sinatra'
- end
+  gem 'sendgrid-ruby'
+end

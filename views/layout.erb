@@ -52,11 +52,11 @@
 
       <footer class="footer fixed-bottom bg-light">
         <div class="container">
-          <form class="col-md-6 offset-md-3">
+          <form class="col-md-6 offset-md-3" action="/catalog" method="post">
             <div class="form-group row justify-content-center my-2">
               <label for="catalog-form">Get our catalog directly to your inbox!</label>
               <div class="input-group">
-                <input type="email" class="form-control form-control-sm" id="catalog-form" aria-describedby="emailHelp" placeholder="Enter email">
+                <input name="email" type="email" class="form-control form-control-sm" id="catalog-form" aria-describedby="emailHelp" placeholder="Enter email">
                 <button type="submit" class="btn btn-primary">Submit</button>
               </div>
               <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>

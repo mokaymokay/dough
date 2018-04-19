@@ -1,4 +1,6 @@
 class Pastry
+  attr_reader :id, :name, :price, :description, :category
+
   def initialize(id, name, price, description, category)
     @id = id
     @name = name
