@@ -2,7 +2,7 @@ require_relative 'pastry'
 require_relative 'menu'
 
 require 'sinatra'
-require 'sinatra/reloader'
+# require 'sinatra/reloader'
 require 'sendgrid-ruby'
 include SendGrid
 
